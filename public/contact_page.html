@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body class="background">
+    <header class="header">
+        <div class="container header__flex">
+            <a class="header__flex__img" href="index.html">
+                <img src="../src/images/logo.png" alt="main-logo">
+            </a>
+            <div class="header__flex flex--right">
+                <nav class="header__flex__nav">
+                    <a href="index.html" target="_blank">HOME</a>
+                    <a href="about_us.html" target="_blank">ABOUT US</a>
+                    <a href="sermons.html" target="_blank">SERMON</a>
+                    <a href="blog.html" target="_blank">BLOG</a>
+                </nav>
+                <button><a href="contact.html" target="blank">CONTUCT US</a></button>
+            </div>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <h6>Contact</h6>
+            <h2>Get in touch with our CHURCH</h2>
+        </div>
+    </section>
+    <main>
+        <section class="data">
+            <div class="container">
+                <div class="data__grid">
+                    <form class="data__grid__form" action="#">
+                        <h5>Contact form:</h5>
+                        <input type="text" placeholder="Your full Name">
+                        <input type="email" placeholder="Your Email">
+                        <input type="text" placeholder="Query Related">
+                        <input type="textarea" placeholder="Message">
+                        <button>Send message</button>
+                    </form>
+                    <div>
+                        <nav class="data__grid__address">
+                            <span>Address</span>
+                            <h5>NH 234 Public Square
+                                San Francisco 65368</h5>
+                            <span>Contact Details</span>
+                            <h5>(480) 555-0103</h5>
+                            <h5>finsweet@example.com</h5>
+                            <span>Find us here</span>
+                            <nav>
+                                <a href="https://ru-ru.facebook.com/"><i class="fab fa-facebook fab--data"></i></a>
+                                <a href="https://twitter.com/?lang=ru"><i class="fab fa-twitter fab--data"></i></a>
+                                <a href="https://www-linkedin.com/"><i class="fab fa-linkedin fab--data"></i></a>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <nav class="footer__grid__line line--1">
+                    <a href="home.html"><img src="../src/images/logo-footer.svg" alt="logo-footer"></a>
+                    <span>© Copyright Finsweet 2022</span>
+                    <span>(480) 555-0103</span>
+                    <span>4517 Washington Ave. </span>
+                    <span>finsweet@example.com</span>
+                </nav>
+                <nav class="footer__grid__line line--2">
+                    <div>
+                        <h6>Quicklinks</h6>
+                        <a class="footer__grid__line__links" href="#">About us</a>
+                        <a class="footer__grid__line__links" href="#">Sermons</a>
+                        <a class="footer__grid__line__links" href="#">Events</a>
+                        <a class="footer__grid__line__links" href="#">Blog</a>
+                    </div>
+                </nav>
+                <section class="footer__grid__line line--3">
+                    <h6>Connect </h6>
+                    <nav>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </nav>
+                </section>
+                <nav class="footer__grid__line line--4">
+                    <h4 class="text--color">Subscribe to get Latest Updates and News</h4>
+                    <form action="#">
+                        <input type="email" placeholder="Yourmail@gmail.com">
+                        <button>Subscribe</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
