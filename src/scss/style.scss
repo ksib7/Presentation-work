@@ -92,24 +92,28 @@
     text-decoration: none;
 }
 
-.header__flex button {
+.header__flex__button {
     max-width: 205px;
     width: 100%;
     background: #FFD2A4;
+    -webkit-backdrop-filter: blur(80px);
     backdrop-filter: blur(80px);
     border-radius: 12px;
     min-height: 56px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 
     font-size: 16px;
     line-height: 16px;
     color: #1C1D28;
-    border: none;
-    cursor: pointer;
-}
-
-.header__flex button a {
-    text-decoration: none;
-    color: black;
 }
 
 .welcome {
@@ -1730,8 +1734,9 @@ button:hover {
         max-width: 300px;
     }
 
-    .header__flex button {
+    .header__flex__button {
         max-width: 150px;
+        width: 100%;
     }
 
     .dashboard__cards h4 {
@@ -1874,9 +1879,10 @@ button:hover {
         margin: 10px auto;
     }
 
-    .header__flex button {
+    .header__flex__button {
         max-width: 100px;
-        min-height: 40pxpx;
+        width: 100%;
+        min-height: 40px;
     }
 
     .flex--right {
@@ -1948,8 +1954,9 @@ button:hover {
         padding: 10px;
     }
 
-    .header__flex button {
+    .header__flex__button {
         max-width: 150px;
+        width: 100%;
     }
 
     .welcome__content h1 {

@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
   \***************************/
 /***/ (() => {
 
-eval("let btnEl = document.getElementById('btn');\r\nlet emailEl = document.getElementById('email');\r\nlet textEl = document.getElementById('text')\r\nlet formEl = document.getElementById('form');\r\n\r\nformEl.addEventListener('submit', function (event) {\r\n    if (emailEl.value == '' || textEl.value == '') {\r\n        alert('Заполните поле ввода.');\r\n        event.preventDefault();\r\n    }\r\n});\n\n//# sourceURL=webpack://finsweet/./src/validation.js?");
+eval("let btnEl = document.getElementById('btn');\r\nlet emailEl = document.getElementById('email');\r\nlet textEl = document.getElementById('text')\r\nlet formEl = document.getElementById('form');\r\n\r\nlet btn = document.querySelector('.btn--js');\r\nlet email = document.querySelector('.email--js');\r\nlet form = document.querySelector('.form--js');\r\n\r\n// for footer\r\nformEl.addEventListener('submit', function (event) {\r\n    if (emailEl.value == '' || textEl.value == '') {\r\n        alert('Заполните поле ввода.');\r\n        event.preventDefault();\r\n    }\r\n});\r\n\r\n// for registration form\r\nform.addEventListener('submit', function (event) {\r\n    if (email.value == '' || textEl.value == '') {\r\n        alert('Заполните поле ввода.');\r\n        event.preventDefault();\r\n    }\r\n});\n\n//# sourceURL=webpack://finsweet/./src/validation.js?");
 
 /***/ })
 
