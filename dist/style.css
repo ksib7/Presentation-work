@@ -1,10 +1,10 @@
-/*!**************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
-  \**************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \********************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Neonderthaw&family=Roboto+Condensed&display=swap);
-/*!******************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss (1) ***!
-  \******************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss (1) ***!
+  \************************************************************************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -54,23 +54,21 @@
   text-decoration: none;
 }
 
-.header__flex button {
+.header__flex__button {
   max-width: 205px;
   width: 100%;
   background: #FFD2A4;
+  -webkit-backdrop-filter: blur(80px);
   backdrop-filter: blur(80px);
   border-radius: 12px;
   min-height: 56px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   color: #1C1D28;
-  border: none;
-  cursor: pointer;
-}
-
-.header__flex button a {
-  text-decoration: none;
-  color: black;
 }
 
 .welcome {
@@ -107,7 +105,8 @@
 .welcome__content button {
   max-width: 234px;
   background: #FFD2A4;
-  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
   border-radius: 12px;
   padding: 0 64px;
   height: 56px;
@@ -559,7 +558,8 @@
   cursor: pointer;
   padding: 24px 64px;
   background: #161722;
-  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
   border-radius: 12px;
   border: none;
   margin-top: 32px;
@@ -872,6 +872,22 @@
   width: 100%;
   background: none;
   min-height: 64px;
+}
+
+.footer__grid__line input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  padding-left: 20px;
+}
+
+.footer__grid__line input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  padding-left: 20px;
 }
 
 .footer__grid__line input::placeholder {
@@ -1599,6 +1615,22 @@
   margin-bottom: 32px;
 }
 
+.form__grid__flex__register__form input::-moz-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D2130;
+}
+
+.form__grid__flex__register__form input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D2130;
+}
+
 .form__grid__flex__register__form input::placeholder {
   font-style: normal;
   font-weight: 500;
@@ -1699,6 +1731,20 @@
 
 .data__grid__form input:last-of-type {
   min-height: 120px;
+}
+
+.data__grid__form input::-moz-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
+}
+
+.data__grid__form input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
 }
 
 .data__grid__form input::placeholder {
@@ -1866,8 +1912,9 @@ button:hover {
     max-width: 300px;
   }
 
-  .header__flex button {
+  .header__flex__button {
     max-width: 150px;
+    width: 100%;
   }
 
   .dashboard__cards h4 {
@@ -2006,9 +2053,10 @@ button:hover {
     margin: 10px auto;
   }
 
-  .header__flex button {
+  .header__flex__button {
     max-width: 100px;
-    min-height: 40pxpx;
+    width: 100%;
+    min-height: 40px;
   }
 
   .flex--right {
@@ -2077,8 +2125,9 @@ button:hover {
     padding: 10px;
   }
 
-  .header__flex button {
+  .header__flex__button {
     max-width: 150px;
+    width: 100%;
   }
 
   .welcome__content h1 {
@@ -2212,8 +2261,3 @@ button:hover {
     line-height: 32px;
   }
 }
-/* display: flex;
-    flex-direction: column;
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 64px; */

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>
         Contact
     </title>
@@ -25,7 +26,7 @@
                     <a href="sermons.html" target="_blank">SERMON</a>
                     <a href="blog.html" target="_blank">BLOG</a>
                 </nav>
-                <button><a href="contact.html" target="blank">CONTUCT US</a></button>
+                <a class="header__flex__button" href="contact.html" target="_blank">CONTUCT US</a>
             </div>
         </div>
     </header>
@@ -39,13 +40,13 @@
         <section class="data">
             <div class="container">
                 <div class="data__grid">
-                    <form class="data__grid__form" action="#">
+                    <form class="data__grid__form form--js" action="#">
                         <h5>Contact form:</h5>
-                        <input type="text" placeholder="Your full Name">
-                        <input type="email" placeholder="Your Email">
-                        <input type="text" placeholder="Query Related">
-                        <input type="textarea" placeholder="Message">
-                        <button>Send message</button>
+                        <input id="text" type="text" placeholder="Your full Name">
+                        <input class="email--js" type="email" placeholder="Your Email">
+                        <input id="text" type="text" placeholder="Query Related">
+                        <input id="text" type="text" placeholder="Message">
+                        <button class="btn--js">Send message</button>
                     </form>
                     <div>
                         <nav class="data__grid__address">
@@ -96,9 +97,9 @@
                 </section>
                 <nav class="footer__grid__line line--4">
                     <h4 class="text--color">Subscribe to get Latest Updates and News</h4>
-                    <form action="#">
-                        <input type="email" placeholder="Yourmail@gmail.com">
-                        <button>Subscribe</button>
+                    <form id="form" action="#">
+                        <input id="email" type="email" placeholder="Yourmail@gmail.com">
+                        <button id="btn">Subscribe</button>
                     </form>
                 </nav>
             </div>
